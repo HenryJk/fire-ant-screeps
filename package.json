@@ -1,0 +1,43 @@
+{
+  "name": "fire-ant-screeps",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "//": "If you add or change the names of destinations in screeps.json, make sure you update these scripts to reflect the changes",
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\"",
+    "push-main": "rollup -c --environment DEST:main",
+    "push-pserver": "rollup -c --environment DEST:pserver",
+    "push-sim": "rollup -c --environment DEST:sim",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-main": "rollup -cw --environment DEST:main",
+    "watch-pserver": "rollup -cw --environment DEST:pserver",
+    "watch-sim": "rollup -cw --environment DEST:sim"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenryJk/fire-ant-screeps"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/HenryJk/fire-ant-screeps/issues"
+  },
+  "homepage": "https://github.com/HenryJk/fire-ant-screeps#readme",
+  "devDependencies": {
+    "@types/lodash": "^3.10.1",
+    "@types/screeps": "^2.3.0",
+    "rollup": "^0.57.1",
+    "rollup-plugin-clean": "^1.0.0",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-screeps": "^0.1.2",
+    "rollup-plugin-typescript2": "^0.12.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "source-map": "~0.6.1",
+    "typings": "^2.1.1"
+  }
+}
